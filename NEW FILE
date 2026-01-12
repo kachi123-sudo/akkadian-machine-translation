@@ -1,0 +1,31 @@
+# Akkadian → English Machine Translation (Low-Resource NLP)
+
+## Overview
+This project explores machine translation for Akkadian transliterations, an ancient low-resource language, using both rule-based and neural approaches.
+
+## Challenges
+- Extremely limited parallel data
+- No large pretrained models available in Kaggle
+- BLEU-based evaluation favors exact phrase overlap
+- Noisy transliteration conventions
+
+## Approach
+- Built a rule-based translation system using a historical Akkadian lexicon
+- Applied normalization and phrase-aware substitutions
+- Used BLEU-aware fallback strategies (copying unknown tokens)
+- Explored neural MT models (mT5, ByT5) off-platform
+
+## Results
+- Kaggle-only (offline): ~7 BLEU
+- Neural MT (ByT5, off-platform): ~15–20 BLEU
+
+## Key Skills Demonstrated
+- Low-resource NLP
+- Dataset debugging and inspection
+- Metric-aware optimization (BLEU)
+- Rule-based MT systems
+- Understanding infrastructure constraints
+
+## Notes
+Due to Kaggle environment restrictions, pretrained transformer models could not be downloaded directly. Neural models were trained off-platform and evaluated via Kaggle submission.
+
